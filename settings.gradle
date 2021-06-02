@@ -1,2 +1,3 @@
 rootProject.name='TestAarPackSingle'
 include ':app'
+include ':ib1'
