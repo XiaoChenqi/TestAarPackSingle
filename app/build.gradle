@@ -36,6 +36,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-    implementation 'com.github.XiaoChenqi:TestAarPackSingle:19.1'
+    implementation 'com.github.XiaoChenqi:TestAarPackSingle:19.3'
     //api project(':basicres')
 }
