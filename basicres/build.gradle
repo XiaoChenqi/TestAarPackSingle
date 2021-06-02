@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-//apply plugin:'maven'
+apply plugin:'maven'
 apply plugin: 'com.github.dcendents.android-maven'
 
 android {
@@ -26,6 +26,7 @@ android {
 
 dependencies {
     testImplementation 'junit:junit:4.12'
+    implementation 'com.github.dcendents:android-maven-gradle-plugin:1.5'
     androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
