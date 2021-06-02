@@ -37,23 +37,26 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.3.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'{
+        //TODO  xcq
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
 }
 //TODO xcq
-//uploadArchives {
-//    configuration = configurations.archives
-//    repositories {
-//        mavenDeployer {
-//            repository(url: 'http://192.168.1.146:8080/nexus/content/repositories/com.facility.wireless/') {
-//                authentication(userName: 'admin', password: 'admin123')
-//            }
-//            pom.project {
-//                version '1.0.0'
-//                artifactId 'basicres'
-//                groupId 'com.facility.wireless'
-//                packaging 'aar'
-//                description 'init version 1.0.0'
-//            }
-//        }
-//    }
-//}
+uploadArchives {
+    configuration = configurations.archives
+    repositories {
+        mavenDeployer {
+            repository(url: 'http://192.168.1.146:8080/nexus/content/repositories/com.facility.wireless/') {
+                authentication(userName: 'admin', password: 'admin123')
+            }
+            pom.project {
+                version '1.0.0'
+                artifactId 'basicres'
+                groupId 'com.facility.wireless'
+                packaging 'aar'
+                description 'init version 1.0.0'
+            }
+        }
+    }
+}
