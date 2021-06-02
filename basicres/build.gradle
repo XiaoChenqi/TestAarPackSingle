@@ -39,7 +39,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'{
         //TODO  xcq
-        exclude group: 'com.android.support', module: 'support-annotations'
+        //exclude group: 'com.android.support', module: 'support-annotations'
     }
 }
 //TODO xcq
