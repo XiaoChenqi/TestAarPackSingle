@@ -11,6 +11,7 @@ android {
         versionName rootProject.ext.versionName_lib
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        //testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
     }
 
@@ -30,6 +31,18 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+//    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//    })
+
+    //TODO xcq 下面这段是v7包所以暂时没引用
+//    api "com.android.support:recyclerview-v7:$supportVersion"
+//    api "com.android.support:cardview-v7:$supportVersion"
+//    api "com.android.support:appcompat-v7:$supportVersion"
+//    api "com.android.support:design:$supportVersion"
+//    api "com.android.support:support-vector-drawable:$supportVersion"
+
 
     //fragmentation and swipeBack
     api 'me.yokeyword:fragmentation:1.3.8'
@@ -55,16 +68,16 @@ dependencies {
     api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40'
     //兼容fragment的沉浸式
     api 'com.gyf.barlibrary:barlibrary:2.3.0'
-    //TODO xcq 这是自己写的可能有问题
+
     //二维码扫描
     api 'com.github.xh2015.fmtool:scan:1.0.11'
     //网络请求
     api 'com.github.xh2015.fmtool:network:1.0.13'
-    //TODO 3
+
     //banner
     api 'com.bigkoo:ConvenientBanner:2.1.1'
     api 'com.youth.banner:banner:1.4.10'
-    //TODO 6 自己写的图片选择
+
     api('com.github.xh2015.PictureSelector:picture_library:v3.1.4') {
         exclude group: 'com.android.support'
     }
@@ -78,16 +91,15 @@ dependencies {
 //    compile ('com.squareup.picasso:picasso:2.71828'){
 //        exclude group: 'com.android.support'
 //    }
-    api "com.android.support:exifinterface:25.3.1"
+    api 'androidx.exifinterface:exifinterface:1.0.0'
     //时间选择
     api 'com.contrarywind:Android-PickerView:4.1.9'
     //65536
-    api 'com.android.support:multidex:1.0.1'
+    api 'androidx.multidex:multidex:2.0.0'
     //星星等级
     api 'com.iarcuschin:simpleratingbar:0.1.5'
-    // TODO 3
 
-    //TODO 4
+
     //空布局
     api 'com.github.czy1121:loadinglayout:1.0.1'
     //rxandroid
@@ -108,9 +120,8 @@ dependencies {
     api ('com.github.zhaolewei:ZlwAudioRecorder:v1.07'){
         exclude group: "com.android.support"
     }
-    //TODO 7 录制视频 这个自己写的
     api 'com.github.xh2015.fmtool:camera2:1.0.16'
-    //TODO 4
+
     //AgentWeb webview加强
     api 'com.just.agentweb:agentweb:4.1.3'
     api ('com.shuyu:gsyVideoPlayer-java:6.0.3'){
