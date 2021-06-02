@@ -1,6 +1,6 @@
 package com.facilityone.wireless.basiclib.utils;
 
-import androidx.core.util.SimpleArrayMap;
+import androidx.collection.SimpleArrayMap;
 
 /**
  * <pre>
