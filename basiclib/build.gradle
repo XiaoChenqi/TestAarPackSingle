@@ -55,4 +55,31 @@ dependencies {
     api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40'
     //兼容fragment的沉浸式
     api 'com.gyf.barlibrary:barlibrary:2.3.0'
+
+    //TODO 3
+    //banner
+    api 'com.bigkoo:ConvenientBanner:2.1.1'
+    api 'com.youth.banner:banner:1.4.10'
+    //TODO 6 自己写的图片选择
+//    api('com.github.xh2015.PictureSelector:picture_library:v3.1.4') {
+//        exclude group: 'com.android.support'
+//    }
+    //util
+    api 'com.blankj:utilcode:1.23.7'
+    //A circular ImageView for Android
+    api 'de.hdodenhof:circleimageview:2.2.0'
+    //item侧滑菜单
+    api 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.3.0'
+    //图片加载库
+//    compile ('com.squareup.picasso:picasso:2.71828'){
+//        exclude group: 'com.android.support'
+//    }
+    api "com.android.support:exifinterface:25.3.1"
+    //时间选择
+    api 'com.contrarywind:Android-PickerView:4.1.9'
+    //65536
+    api 'com.android.support:multidex:1.0.1'
+    //星星等级
+    api 'com.iarcuschin:simpleratingbar:0.1.5'
+    // TODO 3
 }
