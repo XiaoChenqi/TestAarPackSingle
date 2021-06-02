@@ -40,20 +40,20 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
 //TODO xcq
-uploadArchives {
-    configuration = configurations.archives
-    repositories {
-        mavenDeployer {
-            repository(url: 'http://192.168.1.146:8080/nexus/content/repositories/com.facility.wireless/') {
-                authentication(userName: 'admin', password: 'admin123')
-            }
-            pom.project {
-                version '1.0.0'
-                artifactId 'basicres'
-                groupId 'com.facility.wireless'
-                packaging 'aar'
-                description 'init version 1.0.0'
-            }
-        }
-    }
-}
+//uploadArchives {
+//    configuration = configurations.archives
+//    repositories {
+//        mavenDeployer {
+//            repository(url: 'http://192.168.1.146:8080/nexus/content/repositories/com.facility.wireless/') {
+//                authentication(userName: 'admin', password: 'admin123')
+//            }
+//            pom.project {
+//                version '1.0.0'
+//                artifactId 'basicres'
+//                groupId 'com.facility.wireless'
+//                packaging 'aar'
+//                description 'init version 1.0.0'
+//            }
+//        }
+//    }
+//}
