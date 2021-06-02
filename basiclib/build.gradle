@@ -55,15 +55,19 @@ dependencies {
     api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40'
     //兼容fragment的沉浸式
     api 'com.gyf.barlibrary:barlibrary:2.3.0'
-
+    //TODO xcq 这是自己写的可能有问题
+    //二维码扫描
+    api 'com.github.xh2015.fmtool:scan:1.0.11'
+    //网络请求
+    api 'com.github.xh2015.fmtool:network:1.0.13'
     //TODO 3
     //banner
     api 'com.bigkoo:ConvenientBanner:2.1.1'
     api 'com.youth.banner:banner:1.4.10'
     //TODO 6 自己写的图片选择
-//    api('com.github.xh2015.PictureSelector:picture_library:v3.1.4') {
-//        exclude group: 'com.android.support'
-//    }
+    api('com.github.xh2015.PictureSelector:picture_library:v3.1.4') {
+        exclude group: 'com.android.support'
+    }
     //util
     api 'com.blankj:utilcode:1.23.7'
     //A circular ImageView for Android
