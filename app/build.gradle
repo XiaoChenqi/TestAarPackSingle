@@ -1,6 +1,9 @@
-apply plugin: 'com.android.application'
+//apply plugin: 'com.android.application'
 //apply plugin: 'maven'
-apply plugin: 'maven-publish'
+//apply plugin: 'maven-publish'
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+//apply plugin: 'com.github.dcendents.android-maven'
 
 
 android {
@@ -8,7 +11,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.example.testaarpacksingle"
+        //applicationId "com.example.testaarpacksingle"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
